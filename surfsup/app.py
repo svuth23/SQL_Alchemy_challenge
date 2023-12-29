@@ -1,4 +1,4 @@
-# Import the dependencies
+# Import the dependencies.
 import numpy as np
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -31,8 +31,8 @@ def home():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/&lt;start&gt;<br/>"
-        f"/api/v1.0/&lt;start&gt;/&lt;end&gt;<br/>"
+        f"/api/v1.0/<start><br/>"
+        f"/api/v1.0/<start>/<end><br/>"
     )
 
 # Define what to do when a user hits the /precipitation route
@@ -152,4 +152,3 @@ def start_end(start, end):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
